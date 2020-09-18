@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "768100398801",
+    "firebase_url": "https://customer-ala-bricks.firebaseio.com",
+    "project_id": "customer-ala-bricks",
+    "storage_bucket": "customer-ala-bricks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768100398801:android:0f0db3273af34f9c3eb7f0",
+        "android_client_info": {
+          "package_name": "com.ananta.alabricks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768100398801-rkk2reet1e1brauhrcjrkqqa241r83hl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ananta.alabricks",
+            "certificate_hash": "0f754aeb26e79047a6abe8177c439b1ea7b261d9"
+          }
+        },
+        {
+          "client_id": "768100398801-qkh251veoj9thv423do5hspmvfbc0vkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZSQA0fsxHL2ATVf_AAejkHMi21-Su0jQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768100398801-qkh251veoj9thv423do5hspmvfbc0vkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

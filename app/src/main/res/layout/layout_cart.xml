@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="130dp"
+    android:elevation="5dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:weightSum="3"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_product"
+            android:id="@+id/imgProduct"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Title"
+            android:id="@+id/txtProductName"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txtPrice"
+            android:textColor="@color/colorMain"
+            android:text="85"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:id="@+id/edQty"
+                android:paddingLeft="5dp"
+                android:inputType="number"
+                android:background="@drawable/edittxtbg"
+                android:layout_marginTop="5dp"
+                />
+           <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/deletecart"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imgDelete"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btnUpdate"
+                android:textColor="@android:color/white"
+                android:text="UPDATE"
+                android:textSize="12sp"
+                android:background="@color/colorMain"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

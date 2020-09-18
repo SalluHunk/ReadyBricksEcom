@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30"
+        android:orientation="horizontal"
+        android:background="@color/headerColor"
+        android:gravity="center|left"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imgBack"
+            />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:orientation="vertical">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:hint="Product Name"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Description"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edAdditioanlInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Additional Information (Optional)"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Price per Piece"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edAvailibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Availibilty (In Days)"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/uploadproduct"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/imgUploadProduct"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUpload"
+            android:text="Upload Image"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMessage"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+
+        <com.dx.dxloadingbutton.lib.LoadingButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnProceed"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            app:lb_resetAfterFailed="true"
+            app:lb_btnText="Add Product"
+            app:lb_btnColor="@color/colorMain"
+            app:lb_btnRippleColor="@android:color/white"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

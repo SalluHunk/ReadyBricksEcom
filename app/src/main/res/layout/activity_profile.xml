@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="3"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30"
+        android:orientation="horizontal"
+        android:background="@color/headerColor"
+        android:gravity="center|left"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imgBack"
+            />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:orientation="vertical"
+        >
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="Company Name"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/txt_first"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/txt_last"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/txt_email"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/txt_phone"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            android:maxLength="10"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edGST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="GST No"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edVAT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="VAT No"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/txt_address"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edLandmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/txt_landmark"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edAddressTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:inputType="text"
+            android:hint="@string/txt_address_two"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spiCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_multiline="false"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            app:ms_dropDownHintView="@layout/dropdown_hint"
+            app:ms_hintView="@layout/hint_layout"
+            app:ms_hint="Select Country"
+            app:ms_enableFloatingLabel="false"
+            app:ms_enableErrorLabel="false"
+            app:ms_floatingLabelText="User Type"
+            app:ms_baseColor="@color/colorMain"
+            app:ms_highlightColor="@color/colorMain"
+            app:ms_errorColor="@color/colorMain"
+            app:ms_typeface="regularfont.otf"
+            app:ms_thickness="0.5dp"
+            app:ms_hintColor="@android:color/black"
+            app:ms_arrowColor="@color/colorMain"
+            app:ms_arrowSize="16dp"
+            app:ms_alignLabels="false"
+            app:ms_floatingLabelColor="@color/colorMain"/>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spiState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_multiline="false"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            app:ms_dropDownHintView="@layout/dropdown_hint"
+            app:ms_hintView="@layout/hint_layout"
+            app:ms_hint="Select State"
+            app:ms_enableFloatingLabel="false"
+            app:ms_enableErrorLabel="false"
+            app:ms_floatingLabelText="User Type"
+            app:ms_baseColor="@color/colorMain"
+            app:ms_highlightColor="@color/colorMain"
+            app:ms_errorColor="@color/colorMain"
+            app:ms_typeface="regularfont.otf"
+            app:ms_thickness="0.5dp"
+            app:ms_hintColor="@android:color/black"
+            app:ms_arrowColor="@color/colorMain"
+            app:ms_arrowSize="16dp"
+            app:ms_alignLabels="false"
+            app:ms_floatingLabelColor="@color/colorMain"/>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spiDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_multiline="false"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            app:ms_dropDownHintView="@layout/dropdown_hint"
+            app:ms_hintView="@layout/hint_layout"
+            app:ms_hint="Select District"
+            app:ms_enableFloatingLabel="false"
+            app:ms_enableErrorLabel="false"
+            app:ms_floatingLabelText="User Type"
+            app:ms_baseColor="@color/colorMain"
+            app:ms_highlightColor="@color/colorMain"
+            app:ms_errorColor="@color/colorMain"
+            app:ms_typeface="regularfont.otf"
+            app:ms_thickness="0.5dp"
+            app:ms_hintColor="@android:color/black"
+            app:ms_arrowColor="@color/colorMain"
+            app:ms_arrowSize="16dp"
+            app:ms_alignLabels="false"
+            app:ms_floatingLabelColor="@color/colorMain"/>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spiCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_multiline="false"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            app:ms_dropDownHintView="@layout/dropdown_hint"
+            app:ms_hintView="@layout/hint_layout"
+            app:ms_hint="Select City"
+            app:ms_enableFloatingLabel="false"
+            app:ms_enableErrorLabel="false"
+            app:ms_floatingLabelText="User Type"
+            app:ms_baseColor="@color/colorMain"
+            app:ms_highlightColor="@color/colorMain"
+            app:ms_errorColor="@color/colorMain"
+            app:ms_typeface="regularfont.otf"
+            app:ms_thickness="0.5dp"
+            app:ms_hintColor="@android:color/black"
+            app:ms_arrowColor="@color/colorMain"
+            app:ms_arrowSize="16dp"
+            app:ms_alignLabels="false"
+            app:ms_floatingLabelColor="@color/colorMain"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/orderbuttonnext"
+            android:text="SUBMIT"
+            android:id="@+id/btnSubmit"
+            android:layout_margin="15dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

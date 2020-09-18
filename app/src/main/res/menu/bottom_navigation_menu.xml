@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/page_1"
+    android:enabled="true"
+    android:icon="@drawable/addproducrt"
+    android:title="Products"/>
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:icon="@drawable/addproducrt"
+        android:title="Orders"/>
+    <item
+        android:id="@+id/page_3"
+        android:enabled="true"
+        android:icon="@drawable/addproducrt"
+        android:title="Cart"/>
+    <item
+        android:id="@+id/page_4"
+        android:enabled="true"
+        android:icon="@drawable/addproducrt"
+        android:title="Accounts"/>
+</menu>

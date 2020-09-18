@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="3"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30"
+        android:orientation="horizontal"
+        android:background="@color/headerColor"
+        android:gravity="center|left"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imgBack"
+            />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.35"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            >
+            
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/order_process_icon"
+                android:id="@+id/imgStart"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/imgEnd"
+                    android:background="#c0c0c0"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/order_blank_icon"
+                    android:id="@+id/imgEnd"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtAddress"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Confirmation"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtConfirmation"
+                android:alpha="0.5"
+                android:gravity="center|right"
+                />
+
+        </LinearLayout>
+
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            >
+            <util.CircleCheckBox
+                android:id="@+id/chkSame"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:borderThickness="2dp"
+                app:circleBorderColor="#F44343"
+                app:innerCircleColor="#F44343"
+                app:innerCircleRadius="9dp"
+                app:outerCircleColor="#F44343"
+                app:outerCircleRadius="6dp"
+                app:showOuterCircle="true"
+                app:tickColor="#ffffff"
+                app:tickThickness="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Same as Saved Address?"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtSameEmail"
+                />
+        </LinearLayout>-->
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/txt_address"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edLandmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/txt_landmark"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edAddressTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:inputType="text"
+            android:hint="@string/txt_address_two"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            app:met_baseColor="@color/hintColor"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="@color/colorMain"
+            app:met_textColorHint="@color/hintColor"
+            app:met_typeface="regularfont.otf" />
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spiCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_multiline="false"
+            android:layout_marginTop="15dp"
+            app:ms_dropDownHintView="@layout/dropdown_hint"
+            app:ms_hintView="@layout/hint_layout"
+            app:ms_hint="Select Country"
+            app:ms_enableFloatingLabel="false"
+            app:ms_enableErrorLabel="false"
+            app:ms_floatingLabelText="User Type"
+            app:ms_baseColor="@color/colorMain"
+            app:ms_highlightColor="@color/colorMain"
+            app:ms_errorColor="@color/colorMain"
+            app:ms_typeface="regularfont.otf"
+            app:ms_thickness="0.5dp"
+            app:ms_hintColor="@android:color/black"
+            app:ms_arrowColor="@color/colorMain"
+            app:ms_arrowSize="16dp"
+            app:ms_alignLabels="false"
+            app:ms_floatingLabelColor="@color/colorMain"/>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spiState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_multiline="false"
+            android:layout_marginTop="15dp"
+            app:ms_dropDownHintView="@layout/dropdown_hint"
+            app:ms_hintView="@layout/hint_layout"
+            app:ms_hint="Select State"
+            app:ms_enableFloatingLabel="false"
+            app:ms_enableErrorLabel="false"
+            app:ms_floatingLabelText="User Type"
+            app:ms_baseColor="@color/colorMain"
+            app:ms_highlightColor="@color/colorMain"
+            app:ms_errorColor="@color/colorMain"
+            app:ms_typeface="regularfont.otf"
+            app:ms_thickness="0.5dp"
+            app:ms_hintColor="@android:color/black"
+            app:ms_arrowColor="@color/colorMain"
+            app:ms_arrowSize="16dp"
+            app:ms_alignLabels="false"
+            app:ms_floatingLabelColor="@color/colorMain"/>
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spiDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_multiline="false"
+            android:layout_marginTop="15dp"
+            app:ms_dropDownHintView="@layout/dropdown_hint"
+            app:ms_hintView="@layout/hint_layout"
+            app:ms_hint="Select District"
+            app:ms_enableFloatingLabel="false"
+            app:ms_enableErrorLabel="false"
+            app:ms_floatingLabelText="User Type"
+            app:ms_baseColor="@color/colorMain"
+            app:ms_highlightColor="@color/colorMain"
+            app:ms_errorColor="@color/colorMain"
+            app:ms_typeface="regularfont.otf"
+            app:ms_thickness="0.5dp"
+            app:ms_hintColor="@android:color/black"
+            app:ms_arrowColor="@color/colorMain"
+            app:ms_arrowSize="16dp"
+            app:ms_alignLabels="false"
+            app:ms_floatingLabelColor="@color/colorMain"/>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spiCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_multiline="false"
+            android:layout_marginTop="15dp"
+            app:ms_dropDownHintView="@layout/dropdown_hint"
+            app:ms_hintView="@layout/hint_layout"
+            app:ms_hint="Select City"
+            app:ms_enableFloatingLabel="false"
+            app:ms_enableErrorLabel="false"
+            app:ms_floatingLabelText="User Type"
+            app:ms_baseColor="@color/colorMain"
+            app:ms_highlightColor="@color/colorMain"
+            app:ms_errorColor="@color/colorMain"
+            app:ms_typeface="regularfont.otf"
+            app:ms_thickness="0.5dp"
+            app:ms_hintColor="@android:color/black"
+            app:ms_arrowColor="@color/colorMain"
+            app:ms_arrowSize="16dp"
+            app:ms_alignLabels="false"
+            app:ms_floatingLabelColor="@color/colorMain"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/orderbuttonback"
+                android:text="BACK"
+                android:id="@+id/btnBack"
+                android:layout_margin="15dp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/orderbuttonnext"
+                android:text="NEXT"
+                android:id="@+id/btnNext"
+                android:layout_margin="15dp"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

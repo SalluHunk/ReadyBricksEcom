@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        android:background="@color/headerColor"
+        android:gravity="center|left"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imgBack"
+            />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.7"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:hint="First Name"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="16sp"
+                app:met_baseColor="@color/hintColor"
+                app:met_floatingLabel="normal"
+                app:met_primaryColor="@color/colorMain"
+                app:met_textColorHint="@color/hintColor"
+                app:met_typeface="regularfont.otf" />
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="16sp"
+                app:met_baseColor="@color/hintColor"
+                app:met_floatingLabel="normal"
+                app:met_primaryColor="@color/colorMain"
+                app:met_textColorHint="@color/hintColor"
+                app:met_typeface="regularfont.otf" />
+
+
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="16sp"
+                android:maxLength="10"
+                app:met_baseColor="@color/hintColor"
+                app:met_floatingLabel="normal"
+                app:met_primaryColor="@color/colorMain"
+                app:met_textColorHint="@color/hintColor"
+                app:met_typeface="regularfont.otf" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/uploadproduct"
+                        android:layout_gravity="center"
+                        android:id="@+id/imgUploadLicense"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtUploadLicense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="License Photo"
+                        android:textColor="@android:color/black" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/uploadproduct"
+                        android:layout_gravity="center"
+                        android:id="@+id/imgDriverPhoto"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtUpload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Driver Photo"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.dx.dxloadingbutton.lib.LoadingButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnUpdateDriver"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                app:lb_resetAfterFailed="true"
+                app:lb_btnText="Update Driver"
+                app:lb_btnColor="@color/colorMain"
+                app:lb_btnRippleColor="@android:color/white"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtReason"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

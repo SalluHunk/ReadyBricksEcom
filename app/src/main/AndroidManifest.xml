@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ananta.myapplication">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCZSQA0fsxHL2ATVf_AAejkHMi21-Su0jQ" />
+        <activity android:name=".general.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".general.ChangePassword" android:screenOrientation="portrait"></activity>
+        <activity android:name=".general.ForgotPasswordStepOne" android:screenOrientation="portrait"></activity>
+        <activity android:name=".general.ForgotPasswordStepTwo" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.TrackingOrderActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".general.MainActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.ManufacturerListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.FilterActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".manufacturer.ManufacturerSettings" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.ProcessOrderSecondActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.ProcessOrderFirstActivithy" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.CustomerDashboard" android:screenOrientation="portrait"></activity>
+        <activity android:name=".general.SignupTwoActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".general.SignupThreeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".manufacturer.ManufacturerDashboard" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.TransporterDashboard" android:screenOrientation="portrait"></activity>
+        <activity android:name=".manufacturer.ManufacturerAddProducts" android:screenOrientation="portrait"></activity>
+        <activity android:name=".manufacturer.ManufacturerProduct" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.SingleProductActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".manufacturer.EditProductActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".manufacturer.InventoryActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".manufacturer.AddInventory" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.SingleOrderDetails" android:screenOrientation="portrait"></activity>
+        <activity android:name=".manufacturer.OrderActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".manufacturer.SingleOrderDetailsManufacturer" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.SingleOrderDetailsTransporter" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.TransportOrderActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.DriverListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.SingleDriverActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.AddDriverActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.TruckListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.SingleVehicleActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".transporter.AddTruckActivity" android:screenOrientation="portrait"></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".general.SignupActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".general.ContactUsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".general.ProfileActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.NotificationListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.SingleNotificationActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".customer.AddReviewActivity" android:screenOrientation="portrait"></activity>
+        <service android:name=".firebase.MyFirebaseMessagingService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.FcmTokenRegistrationService"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="prakash" />
+    </application>
+
+</manifest>

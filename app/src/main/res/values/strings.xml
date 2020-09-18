@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Ready Bricks</string>
+    <string name="txt_welcome">Welcome,</string>
+    <string name="txt_signin">Sign in to Continue</string>
+    <string name="txt_signup_text">Sign up to Continue</string>
+    <string name="txt_address_text">Address Details</string>
+    <string name="txt_contact">Contact Details</string>
+    <string name="txt_skip">Skip</string>
+    <string name="txt_phone">Phone Number</string>
+    <string name="txt_company_name">Company Name</string>
+    <string name="txt_email">Email Address</string>
+    <string name="txt_otp">OTP</string>
+    <string name="txt_send_otp">Send OTP</string>
+    <string name="txt_financial">Financial Details</string>
+    <string name="txt_gst">GST Number</string>
+    <string name="txt_vat">VAT Number</string>
+    <string name="txt_first">First Name</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_last">Last Name</string>
+    <string name="txt_landmark">Landmark</string>
+    <string name="txt_address_two">Address Line 2 (Optional)</string>
+    <string name="txt_forgot">Forgot Password?</string>
+    <string name="txt_sign">SIGN IN</string>
+    <string name="txt_next">NEXT</string>
+    <string name="txt_sbumit">SUBMIT</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_newuser">New User?</string>
+    <string name="txt_signup">Signup</string>
+    <string name="txt_facebook">Continue With Facebook</string>
+    <string name="txt_google">Continue With Google</string>
+    <string name="txt_or">- OR -</string>
+    <string name="txt_phone_error">Invalid Phone Number</string>
+    <string name="txt_firstname_error">Please enter First Name</string>
+
+    <string name="txt_country_error">Please Select Country</string>
+    <string name="txt_state_error">Please Select State</string>
+    <string name="txt_city_error">Please Select City</string>
+    <string name="txt_address_error">Please Enter Address</string>
+    <string name="txt_landmark_error">Please Enter Landmark</string>
+
+    <string name="txt_user_error">Please Select User Type</string>
+    <string name="txt_lastname_error">Please enter Last Name</string>
+    <string name="txt_password_error">Invalid Password. Minimum length is 8 characters</string>
+    <string name="txt_login_error">Invalid Credentials</string>
+    <string name="facebook_app_id">186339735876436</string>
+    <string name="fb_login_protocol_scheme">fb186339735876436</string>
+    <string name="txt_email_error">Please enter Email Address</string>
+    <string name="txt_exist_email">Email Address Already Exists</string>
+    <string name="txt_exist_phone">Phone Number Already Exists</string>
+    <string name="txt_company_error">Please Enter Company Name</string>
+    <string name="txt_financial_error">Please Enter Financial Details</string>
+    <string name="txt_regenerate_error">Please Re-generate OTP</string>
+    <string name="txt_logo_error">Please Upload Logo</string>
+</resources>
